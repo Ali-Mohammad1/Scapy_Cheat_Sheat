@@ -1,8 +1,27 @@
 from scapy.all import *
 import inspect
+print("____________________OSI Model____________________\n")
+print(
+"""
+┌─────────────────────────────────────────────┐
+│  7. Application     (HTTP, DNS, DHCP)       │  ← User Interface
+├─────────────────────────────────────────────┤
+│  6. Presentation    (Encryption, Compress.) │  ← Data Formatting
+├─────────────────────────────────────────────┤
+│  5. Session         (Connection Mgmt.)      │  ← Sessions & Ports
+├─────────────────────────────────────────────┤
+│  4. Transport       (TCP, UDP)              │  ← End-to-End Delivery
+├─────────────────────────────────────────────┤
+│  3. Network         (IP, ICMP)              │  ← Routing & Addressing
+├─────────────────────────────────────────────┤
+│  2. Data Link       (Ethernet, ARP)         │  ← Framing & MAC
+├─────────────────────────────────────────────┤
+│  1. Physical        (Cables, Signals)       │  ← Raw Bit Transmission
+└─────────────────────────────────────────────┘
+"""
+)
 
-print("Scapy Cheat Sheet\n____________________\n")
-
+print("\n___________________Scapy Cheat Sheet____________________\n")
 print("\n======IP======\n")
 print("IP components\n______________\n")
 
